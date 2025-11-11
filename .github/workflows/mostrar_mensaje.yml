@@ -1,0 +1,20 @@
+name: Mostrar mensaje
+on:
+ push:
+  branch: [ main ]
+jobs:
+ build:
+  runs-on: ubuntu-latest
+  steps:
+  - name: Mostrar el mensaje por la pantalla
+    run:
+      echo "hola desde el runner de github action"
+  - name: Mostrar fecha y hora
+    run:
+      echo "Fecha y hora de ejecución: $(date '+%Y-%m-%d %H:%M:%S')"
+  - name: Mostrar version de java
+    run: |
+      java -version
+      echo "Version de java comprobadad con éxito"
+      
+      
