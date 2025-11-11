@@ -15,7 +15,6 @@ jobs:
       date
   - name: Mostrar version de java
     run: |
-      java -v
-      echo "Version de java comprobadad con éxito"
+      java --version || echo "Java no instalado"
       
       
