@@ -11,10 +11,11 @@ jobs:
       echo "hola desde el runner de github action"
   - name: Mostrar fecha y hora
     run:
-      echo "Fecha y hora de ejecución: $(date '+%Y-%m-%d %H:%M:%S')"
+      echo "Fecha y hora de ejecución:"
+      date
   - name: Mostrar version de java
     run: |
-      java -version
+      java -v
       echo "Version de java comprobadad con éxito"
       
       
